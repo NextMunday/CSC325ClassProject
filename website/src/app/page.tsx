@@ -11,6 +11,7 @@ import Highlights from '@/components/Highlights';
 import Pricing from '@/components/Pricing';
 import FAQ from '@/components/FAQ';
 import type {} from '@mui/material/themeCssVarsAugmentation';
+import BelowFold from '@/components/BelowFold';
 
 export default function Home() {
   return (
@@ -26,16 +27,7 @@ export default function Home() {
       >
         <Hero />
         <div>
-          <LogoCollection />
-          <Features />
-          <Divider />
-          <Testimonials />
-          <Divider />
-          <Highlights />
-          <Divider />
-          <Pricing />
-          <Divider />
-          <FAQ />
+          <BelowFold />
         </div>
       </Box>
     </Container>

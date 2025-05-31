@@ -63,7 +63,7 @@ export default function Hero() {
         <Stack
           spacing={2}
           useFlexGap
-          sx={{ alignItems: 'center', width: { xs: '100%', sm: '70%' } }}
+          sx={{ alignItems: 'center', width: { xs: '100%', sm: '100%' } }}
         >
           <Typography
             variant="h1"
@@ -74,7 +74,7 @@ export default function Hero() {
               fontSize: 'clamp(3rem, 10vw, 3.5rem)',
             }}
           >
-            Your&nbsp;next&nbsp;
+            Your Skills,&nbsp;
             <Typography
               component="span"
               variant="h1"
@@ -86,21 +86,17 @@ export default function Hero() {
                 }),
               })}
             >
-              great hire
+              Your Future
             </Typography>
           </Typography>
           <Typography
-            sx={{
-              textAlign: 'center',
-              color: 'text.secondary',
-              width: { sm: '100%', md: '80%' },
-            }}
-          >
-            You're on a mission to build exceptional tech teams—and I’m here to make it easier 
-            for you. As a passionate junior developer, I bring fresh ideas, problem-solving 
-            skills, automation, and a commitment to delivering results. Let’s work together to turn your 
-            challenges into opportunities, and ensure your team thrives.
-          </Typography>
+          component="h2"
+          variant="h4"
+          gutterBottom
+          sx={{ color: 'text.primary' }}
+        >
+          Build the person you want to be.
+        </Typography>
           <Stack
             direction={{ xs: 'column', sm: 'row' }}
             spacing={1}
@@ -131,7 +127,7 @@ export default function Hero() {
               size="small"
               sx={{ minWidth: 'fit-content' }}
             >
-              Go now
+              Stay updated
             </Button>
           </Stack>
           <Typography
@@ -139,7 +135,7 @@ export default function Hero() {
             color="text.secondary"
             sx={{ textAlign: 'center' }}
           >
-            By clicking &quot;Start now&quot; you agree to our&nbsp;
+            By clicking &quot;Stay updated&quot; you agree to our&nbsp;
             <Link href="#" color="primary">
               Terms & Conditions
             </Link>

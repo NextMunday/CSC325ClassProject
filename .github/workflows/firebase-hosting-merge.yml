@@ -11,19 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - name: Install Dependencies
-        working-directory: ./website
-        run: npm install
-
-      - name: Build
-        working-directory: ./website
-        run: npm run build
-
+      - run: npm ci && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_NEXTMUNDAYSITE }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_NEXTMUNDAYSITE_F1E5E }}
           channelId: live
-          projectId: nextmundaysite
-          entryPoint: ./website
+          projectId: nextmundaysite-f1e5e

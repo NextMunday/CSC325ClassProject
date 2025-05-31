@@ -31,16 +31,16 @@ const defaultTheme = createTheme();
 const customShadows: Shadows = [...defaultTheme.shadows];
 
 export const brand = {
-  50: 'hsl(210, 100%, 95%)',
-  100: 'hsl(210, 100%, 92%)',
-  200: 'hsl(210, 100%, 80%)',
-  300: 'hsl(210, 100%, 65%)',
-  400: 'hsl(210, 98%, 48%)',
-  500: 'hsl(210, 98%, 42%)',
-  600: 'hsl(210, 98%, 55%)',
-  700: 'hsl(210, 100%, 35%)',
-  800: 'hsl(210, 100%, 16%)',
-  900: 'hsl(210, 100%, 21%)',
+  50: 'hsl(180, 100%, 95%)',
+  100: 'hsl(180, 100%, 92%)',
+  200: 'hsl(180, 100%, 80%)',
+  300: 'hsl(180, 100%, 65%)',
+  400: 'hsl(180, 98%, 48%)',
+  500: 'hsl(180, 98%, 42%)',
+  600: 'hsl(180, 98%, 55%)',
+  700: 'hsl(180, 100%, 35%)',
+  800: 'hsl(180, 100%, 21%)',
+  900: 'hsl(180, 100%, 16%)',
 };
 
 export const gray = {
@@ -105,15 +105,15 @@ export const getDesignTokens = (mode: PaletteMode) => {
     palette: {
       mode,
       primary: {
-        light: brand[200],
-        main: brand[400],
-        dark: brand[700],
+        light: brand[300],
+        main: brand[700],
+        dark: brand[800],
         contrastText: brand[50],
         ...(mode === 'dark' && {
           contrastText: brand[50],
-          light: brand[300],
-          main: brand[400],
-          dark: brand[700],
+          light: brand[400],
+          main: brand[700],
+          dark: brand[800],
         }),
       },
       info: {
@@ -242,9 +242,9 @@ export const colorSchemes = {
   light: {
     palette: {
       primary: {
-        light: brand[200],
-        main: brand[400],
-        dark: brand[700],
+        light: brand[300],
+        main: brand[700],
+        dark: brand[800],
         contrastText: brand[50],
       },
       info: {
@@ -293,9 +293,9 @@ export const colorSchemes = {
     palette: {
       primary: {
         contrastText: brand[50],
-        light: brand[300],
-        main: brand[400],
-        dark: brand[700],
+        light: brand[400],
+        main: brand[700],
+        dark: brand[800],
       },
       info: {
         contrastText: brand[300],
