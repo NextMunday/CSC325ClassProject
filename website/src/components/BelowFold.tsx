@@ -5,38 +5,32 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-import AutoFixHighRoundedIcon from '@mui/icons-material/AutoFixHighRounded';
-import ConstructionRoundedIcon from '@mui/icons-material/ConstructionRounded';
-import QueryStatsRoundedIcon from '@mui/icons-material/QueryStatsRounded';
-import SettingsSuggestRoundedIcon from '@mui/icons-material/SettingsSuggestRounded';
-import SupportAgentRoundedIcon from '@mui/icons-material/SupportAgentRounded';
-import ThumbUpAltRoundedIcon from '@mui/icons-material/ThumbUpAltRounded';
 import CancelIcon from '@mui/icons-material/Cancel';
 
 const items = [
     {
         icon: <CancelIcon />,
-        title: 'University Degrees',
-        description:
-            'Degrees, though historically valued, increasingly serve as costly, time-consuming hurdles that often fail to provide the practical skills employers now demand.',
+        title: 'Your non-traditional skills aren\'t recognized or valued.',
     },
     {
         icon: <CancelIcon />,
-        title: 'Industry Certifications',
-        description:
-            'While certifications can demonstrate basic knowledge, many are seen as superficial, failing to prove true practical skill in today\'s job market.',
+        title: 'The hiring process is long, frustrating, and algorithm-driven.',
     },
     {
         icon: <CancelIcon />,
-        title: 'Resumes',
-        description:
-            'Resumes often fall short in today\'s job market, providing only a static snapshot of past experiences rather than showcasing dynamic skills, work ethic, or cultural fit.',
+        title: 'Resumes and portfolios: hard to perfect, don\'t show full potential.',
     },
     {
         icon: <CancelIcon />,
-        title: 'Portfolios',
-        description:
-            'Portfolios, though visual, often lack standardization and can be too time-consuming for hiring managers to effectively assess.',
+        title: '"Ghosting" hurts: no feedback, lost confidence, despite qualifications.',
+    },
+    {
+        icon: <CancelIcon />,
+        title: 'Companies miss talent due to flawed screening systems.',
+    },
+    {
+        icon: <CancelIcon />,
+        title: 'Finding ways to showcase skills is unfairly difficult.',
     },
 ];
 
@@ -67,16 +61,16 @@ export default function BelowFold() {
                         textAlign: { sm: 'left', md: 'center' },
                     }}
                 >
-                    <Typography component="h2" variant="h4" gutterBottom>
-                        You're more than paper. Stop letting outdated systems hold you back.
+                    <Typography component="h2" variant="h2" gutterBottom>
+                        Are you struggling to show your talent?
                     </Typography>
-                    <Typography variant="body1" sx={{ color: 'grey.400' }}>
-                        You've invested heavily in learning, only to find traditional degrees and certifications don't adequately reflect your true skills or help you stand out. The process is long, frustrating, and often results in a credential that employers see as just a checklist item. Isn't it time learning and validation caught up with the modern world, giving you control and real recognition?
+                    <Typography component="h2" variant="h4" sx={{ fontWeight: 'light', color: 'grey.400' }}>
+                        Employers are increasingly using technology to quickly assess talent at scale. Getting noticed is harder than ever...
                     </Typography>
                 </Box>
                 <Grid container spacing={2}>
                     {items.map((item, index) => (
-                        <Grid size={{ xs: 12, sm: 6, md: 6 }} key={index}>
+                        <Grid size={{ xs: 12, sm: 6, md: 4 }} key={index}>
                             <Stack
                                 direction="column"
                                 component={Card}
@@ -97,14 +91,21 @@ export default function BelowFold() {
                                         {item.title}
                                     </Typography>
                                     </Stack>
-                                    <Typography variant="body2" sx={{ color: 'grey.400' }}>
-                                        {item.description}
-                                    </Typography>
                                 </div>
                             </Stack>
                         </Grid>
                     ))}
                 </Grid>
+                <Box
+                    sx={{
+                        width: { sm: '100%', md: '60%' },
+                        textAlign: { sm: 'left', md: 'center' },
+                    }}
+                >
+                    <Typography component="h2" variant="h4" sx={{ fontWeight: 'light', color: 'grey.400' }}>
+                        NextMunday puts control of your story – the whole story – back in your hands to work with the modern technological hiring landscape.
+                    </Typography>
+                </Box>
             </Container>
         </Box>
     )
