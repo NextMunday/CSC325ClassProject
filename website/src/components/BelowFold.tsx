@@ -16,27 +16,27 @@ import CancelIcon from '@mui/icons-material/Cancel';
 const items = [
     {
         icon: <CancelIcon />,
-        title: 'Adaptable performance',
+        title: 'University Degrees',
         description:
-            'Our product effortlessly adjusts to your needs, boosting efficiency and simplifying your tasks.',
+            'Degrees, though historically valued, increasingly serve as costly, time-consuming hurdles that often fail to provide the practical skills employers now demand.',
     },
     {
         icon: <CancelIcon />,
-        title: 'Built to last',
+        title: 'Industry Certifications',
         description:
-            'Experience unmatched durability that goes above and beyond with lasting investment.',
+            'While certifications can demonstrate basic knowledge, many are seen as superficial, failing to prove true practical skill in today\'s job market.',
     },
     {
         icon: <CancelIcon />,
-        title: 'Great user experience',
+        title: 'Resumes',
         description:
-            'Integrate our product into your routine with an intuitive and easy-to-use interface.',
+            'Resumes often fall short in today\'s job market, providing only a static snapshot of past experiences rather than showcasing dynamic skills, work ethic, or cultural fit.',
     },
     {
         icon: <CancelIcon />,
-        title: 'Innovative functionality',
+        title: 'Portfolios',
         description:
-            'Stay ahead with features that set new standards, addressing your evolving needs better than the rest.',
+            'Portfolios, though visual, often lack standardization and can be too time-consuming for hiring managers to effectively assess.',
     },
 ];
 
