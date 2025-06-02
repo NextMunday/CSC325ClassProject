@@ -9,7 +9,8 @@
 		"ghcr.io/devcontainers-extra/features/markdownlint-cli:1": {}
 	},
 	"postStartCommand": {
-		"Sync Vale": "vale sync"
+		"Sync Vale": "vale sync",
+		"Install Node Dependencies": "cd website; npm install;"
 	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
