@@ -57,6 +57,11 @@ export default function AppAppBar() {
         <StyledToolbar variant="dense" disableGutters>
           <Box sx={{ flexGrow: 1, display: 'flex', alignItems: 'center', px: 0 }}>
             <Sitemark />
+            <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
+              <Button variant="text" color="info" size="small" href="#features" >
+                Features
+              </Button>
+            </Box>
           </Box>
           <Box
             sx={{
