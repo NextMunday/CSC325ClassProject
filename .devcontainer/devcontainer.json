@@ -9,7 +9,15 @@
 		"ghcr.io/devcontainers-extra/features/markdownlint-cli:1": {}
 	},
 	"postStartCommand": {
-		"Sync Vale": "vale sync"
+		"Sync Vale": "vale sync",
+		"Install Node Dependencies": "cd website; npm install;"
+	},
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			// add the IDs of extensions you want installed when the container is created.
+			"extensions": ["unifiedjs.vscode-mdx"]
+		}
 	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.

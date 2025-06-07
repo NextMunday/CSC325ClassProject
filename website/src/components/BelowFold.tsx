@@ -5,38 +5,32 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-import AutoFixHighRoundedIcon from '@mui/icons-material/AutoFixHighRounded';
-import ConstructionRoundedIcon from '@mui/icons-material/ConstructionRounded';
-import QueryStatsRoundedIcon from '@mui/icons-material/QueryStatsRounded';
-import SettingsSuggestRoundedIcon from '@mui/icons-material/SettingsSuggestRounded';
-import SupportAgentRoundedIcon from '@mui/icons-material/SupportAgentRounded';
-import ThumbUpAltRoundedIcon from '@mui/icons-material/ThumbUpAltRounded';
 import CancelIcon from '@mui/icons-material/Cancel';
 
 const items = [
     {
         icon: <CancelIcon />,
-        title: 'Adaptable performance',
-        description:
-            'Our product effortlessly adjusts to your needs, boosting efficiency and simplifying your tasks.',
+        title: 'Your non-traditional skills aren\'t recognized or valued.',
     },
     {
         icon: <CancelIcon />,
-        title: 'Built to last',
-        description:
-            'Experience unmatched durability that goes above and beyond with lasting investment.',
+        title: 'The hiring process is long, frustrating, and algorithm-driven.',
     },
     {
         icon: <CancelIcon />,
-        title: 'Great user experience',
-        description:
-            'Integrate our product into your routine with an intuitive and easy-to-use interface.',
+        title: 'Resumes and portfolios: hard to perfect, don\'t show full potential.',
     },
     {
         icon: <CancelIcon />,
-        title: 'Innovative functionality',
-        description:
-            'Stay ahead with features that set new standards, addressing your evolving needs better than the rest.',
+        title: '"Ghosting" hurts: no feedback, lost confidence, despite qualifications.',
+    },
+    {
+        icon: <CancelIcon />,
+        title: 'Companies miss talent due to flawed screening systems.',
+    },
+    {
+        icon: <CancelIcon />,
+        title: 'Finding ways to showcase skills is unfairly difficult.',
     },
 ];
 
@@ -67,16 +61,16 @@ export default function BelowFold() {
                         textAlign: { sm: 'left', md: 'center' },
                     }}
                 >
-                    <Typography component="h2" variant="h4" gutterBottom>
-                        You're more than paper. Stop letting outdated systems hold you back.
+                    <Typography component="h2" variant="h2" gutterBottom>
+                        Are you struggling to show your talent?
                     </Typography>
-                    <Typography variant="body1" sx={{ color: 'grey.400' }}>
-                        You've invested heavily in learning, only to find traditional degrees and certifications don't adequately reflect your true skills or help you stand out. The process is long, frustrating, and often results in a credential that employers see as just a checklist item. Isn't it time learning and validation caught up with the modern world, giving you control and real recognition?
+                    <Typography component="h2" variant="h4" sx={{ fontWeight: 'light', color: 'grey.400' }}>
+                        Employers are increasingly using technology to quickly assess talent at scale. Getting noticed is harder than ever...
                     </Typography>
                 </Box>
                 <Grid container spacing={2}>
                     {items.map((item, index) => (
-                        <Grid size={{ xs: 12, sm: 6, md: 6 }} key={index}>
+                        <Grid size={{ xs: 12, sm: 6, md: 4 }} key={index}>
                             <Stack
                                 direction="column"
                                 component={Card}
@@ -97,14 +91,21 @@ export default function BelowFold() {
                                         {item.title}
                                     </Typography>
                                     </Stack>
-                                    <Typography variant="body2" sx={{ color: 'grey.400' }}>
-                                        {item.description}
-                                    </Typography>
                                 </div>
                             </Stack>
                         </Grid>
                     ))}
                 </Grid>
+                <Box
+                    sx={{
+                        width: { sm: '100%', md: '60%' },
+                        textAlign: { sm: 'left', md: 'center' },
+                    }}
+                >
+                    <Typography component="h2" variant="h4" sx={{ fontWeight: 'light', color: 'grey.400' }}>
+                        NextMunday puts control of your story – the whole story – back in your hands to work with the modern technological hiring landscape.
+                    </Typography>
+                </Box>
             </Container>
         </Box>
     )
