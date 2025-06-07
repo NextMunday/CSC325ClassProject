@@ -28,6 +28,7 @@ export default function Home() {
         <Hero />
         <div>
           <BelowFold />
+          <Features />
         </div>
       </Box>
     </Container>
