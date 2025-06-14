@@ -16,21 +16,11 @@ import BelowFold from '@/components/BelowFold';
 export default function Home() {
   return (
     <Container maxWidth="lg">
-      <Box
-        sx={{
-          my: 4,
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}
-      >
         <Hero />
         <div>
           <BelowFold />
           <Features />
         </div>
-      </Box>
     </Container>
   );
 }

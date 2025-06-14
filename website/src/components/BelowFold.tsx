@@ -61,10 +61,10 @@ export default function BelowFold() {
                         textAlign: { sm: 'left', md: 'center' },
                     }}
                 >
-                    <Typography component="h2" variant="h2" gutterBottom>
+                    <Typography component="h2" variant="h4" gutterBottom>
                         Are you struggling to show your talent?
                     </Typography>
-                    <Typography component="h2" variant="h4" sx={{ fontWeight: 'light', color: 'grey.400' }}>
+                    <Typography variant="body1" sx={{ color: 'grey.400' }}>
                         Employers are increasingly using technology to quickly assess talent at scale. Getting noticed is harder than ever...
                     </Typography>
                 </Box>
@@ -88,8 +88,8 @@ export default function BelowFold() {
                                     <Stack alignItems='center' direction='row' gap={2}>
                                         <Box sx={{ color: 'red' }}>{item.icon}</Box>
                                         <Typography gutterBottom sx={{ fontWeight: 'medium' }}>
-                                        {item.title}
-                                    </Typography>
+                                            {item.title}
+                                        </Typography>
                                     </Stack>
                                 </div>
                             </Stack>
@@ -102,7 +102,7 @@ export default function BelowFold() {
                         textAlign: { sm: 'left', md: 'center' },
                     }}
                 >
-                    <Typography component="h2" variant="h4" sx={{ fontWeight: 'light', color: 'grey.400' }}>
+                    <Typography component="h2" variant="h4">
                         NextMunday puts control of your story – the whole story – back in your hands to work with the modern technological hiring landscape.
                     </Typography>
                 </Box>

@@ -27,3 +27,4 @@ jobs:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_NEXTMUNDAYSITE_F1E5E }}
           projectId: nextmundaysite-f1e5e
+          entryPoint: ./website

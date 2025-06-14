@@ -1,4 +1,6 @@
+'use client'
 import * as React from 'react';
+import dynamic from 'next/dynamic';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
@@ -90,13 +92,13 @@ export default function Hero() {
             </Typography>
           </Typography>
           <Typography
-          component="h2"
-          variant="h4"
-          gutterBottom
-          sx={{ color: 'text.primary' }}
-        >
-          Build the person you want to be.
-        </Typography>
+            component="h2"
+            variant="h4"
+            gutterBottom
+            sx={{ color: 'text.primary' }}
+          >
+            Build the person you want to be.
+          </Typography>
           <Stack
             direction={{ xs: 'column', sm: 'row' }}
             spacing={1}
